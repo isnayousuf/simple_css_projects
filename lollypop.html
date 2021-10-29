@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+           margin: 0;
+           padding: 0;
+       }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           background-color: rgb(22, 21, 21);
+        }
+        .stick{
+            width: 0.4rem;
+            height: 7rem;
+            position: relative;
+            
+            background-color: burlywood;
+        }
+
+       
+        .stick::after{
+            content: '';
+            width: 4rem;
+            height: 4rem;
+            background: repeating-linear-gradient(-45deg, chocolate, chocolate 5px, wheat 10px, wheat 15px, rgb(210, 96, 30) 5px, wheat 10px);
+            position: absolute;
+            top: -3rem;
+            left: -1.8rem;
+            border-radius: 50%;
+           
+            
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="stick"></div>
+        </div>
+    </main>
+</body>
+</html>
